@@ -1,0 +1,208 @@
+:root {
+  --DarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+  --DarkGrayishBlue: hsl(217, 19%, 35%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  min-height: 100vh;
+  background: var(--LightGrayishBlue);
+}
+main {
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+  background-color:white;
+ 
+
+}
+
+.card1 {
+  width: 45%;
+  height: 100%;
+  background-image: url("./images/drawers.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+   
+   border-radius: 10px 0 0 10px;
+}
+
+.card2 {
+  width: 50%;
+  padding: 10px;
+  margin-right: 20px;
+  padding: 30px;
+}
+.card2 h1 {
+  margin-bottom: 20px;
+}
+.avatar {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+   
+
+}
+
+.user{
+ 
+  min-width: 200px;
+}
+.avatar #img {
+  margin:0 15px;
+  width: 30px;
+  border-radius: 50%;
+   
+}
+
+p {
+  color: var(--GrayishBlue);
+  line-height: 1.3;
+   
+}
+/*top*/
+ 
+.icon{
+  border-radius: 50%;
+  width: 40px;;
+  height: 40px;
+  background: var(--LightGrayishBlue);
+  color: var(--DarkGrayishBlue);
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sociel img{
+  padding: 0 10px;
+}
+
+
+
+
+.icon:hover {
+  background: var(--DarkGrayishBlue);
+  color: var(--LightGrayishBlue);
+
+}
+
+.sociel {
+  background:var(--DarkGrayishBlue);
+  color: var(--LightGrayishBlue);
+  display: none;
+  position: relative;
+ top: -80px;
+ right: 150px;
+ padding:  15px 30px;
+  width: 300px;
+border-radius: 10px;
+text-justify: auto;
+
+} 
+
+i{
+  position: absolute; 
+}
+
+.sociel p{
+text-transform: uppercase;
+margin:0 20px;
+}
+
+.sociel::before{
+  content: "";
+  border-width: 20px;
+  border-style:solid ;
+  border-color: var(--DarkGrayishBlue) transparent transparent transparent;
+  position: absolute;
+  top: 50px;
+  right: 45%;
+}
+/*
+.sociel {
+  display: flex;
+}
+*/
+
+
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+     height: 600px;
+     width: 370px;
+    margin: 10px;
+  }
+   
+  .card1 {
+    width: 100%;
+    height: 50% ;
+    background-position: 100%;
+    border-radius: 10px 10px 0 0;
+ 
+  }
+  .card2 {
+    width: 100%;
+    height: 50%  ;
+  }
+  
+  .sociel::before{
+    display: none;
+  }
+  
+  .avatar {
+    position: relative;
+  }
+
+  .sociel {   
+    background:var(--DarkGrayishBlue);
+    color: var(--LightGrayishBlue);
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    width: 110%;
+    border-radius: 10px;
+    left: -10px;
+    z-index:1;
+   
+  } 
+   
+  .icon {
+  background:var(--LightGrayishBlue);
+   z-index: 2;
+   position: relative;
+   top: 15px;
+  }  
+  .share:hover .sociel {
+    background:var(--DarkGrayishBlue);
+    color: var(--LightGrayishBlue);
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    width: 110%;
+    border-radius: 10px;
+    left: -10px;
+    z-index:1;
+    }  
+
+
+ 
+ }
+ */
+
